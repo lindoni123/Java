@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   petclinic:
-    build: dockerfile
+    build: .
     image: local-java-app:latest
     depends_on:
       - postgres
