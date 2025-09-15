@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   petclinic:
-    image: spring-petclinic   # image you built earlier with Dockerfile
+    image: spring-petclinic
     depends_on:
       - postgres
     ports:
