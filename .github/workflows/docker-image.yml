@@ -34,9 +34,9 @@ jobs:
           password: ${{ secrets.TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USER }}/javarepo/java:latest .
+        run: docker build -t ${{ secrets.DOCKER_USER }}/javarepo:latest .
 
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKER_USER }}/javarepo/java:latest
+        run: docker push ${{ secrets.DOCKER_USER }}/javarepo:latest
 
 
